@@ -12,6 +12,7 @@ export default function Keg(props) {
       `}</style>
       <div>
         <h2>{props.name}</h2>
+        <div className="beerImages">{props.img}</div>
         <h3>{props.brand}</h3>
         <h3>${props.price}</h3>
         <p><em>{props.alcoholContent}%</em></p>
@@ -25,6 +26,7 @@ export default function Keg(props) {
 
 Keg.propTypes = {
   name: PropTypes.string.isRequired,
+  img: PropTypes.any.isRequired,
   brand: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   alcoholContent: PropTypes.string.isRequired,
