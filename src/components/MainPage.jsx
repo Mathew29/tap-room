@@ -10,9 +10,12 @@ export default function MainPage() {
       <style>{`
         .whiteTxt {
           color: red;
-          text-align: center;
+
         }
         .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
         }
         .center {
