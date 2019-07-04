@@ -9,7 +9,7 @@
 
 
 ## Specs
-![Component] (TapRoom.png)
+![Component] (./src/assets/images/TapRoom.png)
 
 
 ## Setup/Installation Requirements
