@@ -55,6 +55,7 @@ function Header() {
             <div className="wideDiv">
               <Link to="/"><p>Home</p></Link>
               <Link to="/keglist"><p>Kegs</p></Link>
+              <Link to='/aboutus'><p>About Us</p></Link>
             </div>
           </div>
         </nav>
