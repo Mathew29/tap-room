@@ -10,8 +10,8 @@ export default function Keg(props) {
       <div>
         <h2>{props.name}</h2>
         <h3>{props.brand}</h3>
-        <h3>${props.price}</h3>
-        <p><em>{props.alcoholContent}%</em></p>
+        <h3>{props.price}</h3>
+        <p><em>{props.alcoholContent}</em></p>
         <br/>
       </div>
       <hr/>
@@ -22,6 +22,6 @@ export default function Keg(props) {
 Keg.propTypes = {
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-  alcoholContent: PropTypes.number.isRequired,
+  price: PropTypes.string.isRequired,
+  alcoholContent: PropTypes.string.isRequired,
 };
