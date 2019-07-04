@@ -4,15 +4,31 @@ import { Link } from 'react-router-dom';
 
 
 export default function MainPage() {
-
   return (
+
     <div >
-      <h1>Welcome To The Tap Room</h1>
+      <style>{`
+        .whiteTxt {
+          color: red;
+          text-align: center;
+        }
+        .container {
 
-      <h4>Come And Enjoy Our Nice Beers</h4>
+        }
+        .center {
+          
+        }
+      `}</style>
+      <div className="container">
+        <div className="center">
+          <h1 className="whiteTxt">Welcome To The Tap Room</h1>
 
-      <Link to="/keglist"><button>View Kegs List</button></Link>
-      <Link to="/addkeg"><button>Add New Keg</button></Link>
+          <h4 className="whiteTxt">Come And Enjoy Our Nice Beers</h4>
+
+          <Link to="/keglist"><button>View Kegs List</button></Link>
+          <Link to="/addkeg"><button>Add New Keg</button></Link>
+        </div>
+      </div>
     </div>
 
   );
