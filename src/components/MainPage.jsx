@@ -20,6 +20,10 @@ export default function MainPage() {
           box-shadow: 2px 2px 3px black;
         }
 
+        .center {
+          text-align: center;
+        }
+
         img {
           width: 100px;
           height: 100px;
