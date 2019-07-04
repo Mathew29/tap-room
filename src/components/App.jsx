@@ -14,7 +14,9 @@ function App() {
   return (
     <div>
       <style jsx>{`
-
+        background-color: #deb887;
+        background-size: 200%;
+        padding-bottom: 100%;
       `}</style>
       <NavBar/>
       <Switch>
