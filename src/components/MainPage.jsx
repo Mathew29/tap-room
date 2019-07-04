@@ -9,7 +9,6 @@ export default function MainPage() {
     <div >
       <style>{`
         .whiteTxt {
-          color: red;
 
         }
         .container {
