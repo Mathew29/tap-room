@@ -13,11 +13,11 @@ function Header() {
         border-bottom: 1px solid #000;
       }
       
-      nav	Link {
+      nav	p {
           color: #000;
       }
       
-      nav	Link:visited {
+      nav	p:visited {
           color: #000;
       }
       
@@ -30,7 +30,7 @@ function Header() {
         text-align: center;
       }
       
-      nav .navWide .wideDiv a {
+      nav .navWide .wideDiv p {
         text-decoration: none;
         display: inline-block;
         padding: 0 2em;
@@ -53,7 +53,8 @@ function Header() {
         <nav>
           <div className="navWide">
             <div className="wideDiv">
-              <Link to="/">Home</Link>
+              <Link to="/"><p>Home</p></Link>
+              <Link to="/keglist"><p>Kegs</p></Link>
             </div>
           </div>
         </nav>
