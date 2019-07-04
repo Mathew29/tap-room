@@ -4,6 +4,7 @@ import MainPage from './MainPage';
 import KegList from './KegList';
 import AddKeg from './AddKeg';
 import EditKeg from './EditKeg';
+import AboutUs from './AboutUs';
 
 
 import { Switch, Route } from 'react-router-dom';
@@ -24,6 +25,7 @@ function App() {
         <Route path='/keglist' component={KegList}/>
         <Route path='/addkeg' component={AddKeg}/>
         <Route path='/editkeg' component={EditKeg}/>
+        <Route path='/aboutus' component={AboutUs}/>>
       </Switch>
     </div>
   );
