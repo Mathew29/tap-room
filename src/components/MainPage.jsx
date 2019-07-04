@@ -8,24 +8,22 @@ export default function MainPage() {
 
     <div >
       <style jsx>{`
-        .whiteTxt {
-
-        }
         .container {
           display: flex;
           align-items: center;
           justify-content: center;
 
         }
-        .center {
-          
+        button {
+          margin: 5px;
+          box-shadow: 2px 2px 3px black;
         }
       `}</style>
       <div className="container">
         <div className="center">
-          <h1 className="whiteTxt">Welcome To The Tap Room</h1>
+          <h1>Welcome To The Tap Room</h1>
 
-          <h4 className="whiteTxt">Come And Enjoy Our Nice Beers</h4>
+          <h4>Come And Enjoy Our Nice Beers</h4>
 
           <Link to="/keglist"><button>View Kegs List</button></Link>
           <Link to="/addkeg"><button>Add New Keg</button></Link>
