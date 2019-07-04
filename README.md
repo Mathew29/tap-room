@@ -9,7 +9,7 @@
 
 
 ## Specs
-![Component] (./src/assets/images/TapRoom.png)
+![structure] (https://github.com/Mathew29/tap-room/blob/master/src/assets/images/TapRoom.png)
 
 
 ## Setup/Installation Requirements
