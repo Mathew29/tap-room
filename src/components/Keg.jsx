@@ -6,14 +6,16 @@ export default function Keg(props) {
   return (
     <div>
       <style jsx>{`
-
+        button {
+          box-shadow: 2px 2px 3px black;
+        }
       `}</style>
       <div>
         <h2>{props.name}</h2>
         <h3>{props.brand}</h3>
         <h3>${props.price}</h3>
         <p><em>{props.alcoholContent}%</em></p>
-        <Link to="/addkeg"><button>Add New Keg</button></Link>
+        <Link to="/editkeg"><button>Edit Keg</button></Link>
         <br/>
       </div>
       <hr/>
