@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 var masterKegList = [
   {
-    name: 'Corona',
+    name: 'Corona Extra',
     brand: 'Corona',
     price: '12',
     alcoholContent: '3'
   },
   {
     name: 'MoonShine',
-    brand: 'Basement',
+    brand: 'Basement Made',
     price: '20',
     alcoholContent: '25'
   },
@@ -23,6 +23,12 @@ var masterKegList = [
   },
   {
     name: 'Coors',
+    brand: 'Water',
+    price: '5',
+    alcoholContent: '1'
+  },
+  {
+    name: 'Bud Light',
     brand: 'Water',
     price: '5',
     alcoholContent: '1'
