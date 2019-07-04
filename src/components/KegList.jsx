@@ -38,6 +38,11 @@ var masterKegList = [
 function KegList() {
   return (
     <div>
+      <style jsx>{`
+      button {
+        box-shadow: 2px 2px 3px black;
+      }
+      `}</style>
       <div>
         <hr />
         {masterKegList.map((keg, index) =>
