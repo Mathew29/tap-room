@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar';
-import Keg from './Keg';
+import KegList from './KegList';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ function App() {
       `}</style>
       <NavBar/>
       <Switch>
-        <Route exact path='/' component={Keg}/>
+        <Route exact path='/' component={KegList}/>
       </Switch>
     </div>
   );
