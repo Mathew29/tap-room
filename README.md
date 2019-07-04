@@ -9,7 +9,7 @@
 
 
 ## Specs
-![Component Struture] (TapRoom.png)
+![Component] (TapRoom.png)
 
 
 ## Setup/Installation Requirements
