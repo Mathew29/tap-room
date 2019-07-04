@@ -12,7 +12,9 @@ export default function Keg(props) {
       `}</style>
       <div>
         <h2>{props.name}</h2>
-        <div className="beerImages">{props.img}</div>
+        <div className="beerImages">
+          <img src={props.img} />
+        </div>
         <h3>{props.brand}</h3>
         <h3>${props.price}</h3>
         <p><em>{props.alcoholContent}%</em></p>
