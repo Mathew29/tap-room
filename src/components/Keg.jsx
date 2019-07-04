@@ -9,6 +9,12 @@ export default function Keg(props) {
         button {
           box-shadow: 2px 2px 3px black;
         }
+
+        img {
+          width 200px;
+          height 200px;
+          
+        }
       `}</style>
       <div>
         <h2>{props.name}</h2>
