@@ -6,11 +6,10 @@
 
 ## Description
 
-_This program is in the eyes of an employee. The employee will be able to hire a hair stylist. They will also be able to give the hair stylists clients. The information for the hair stylists and the clients will be stored and retrieved from a SQL database._
 
 
 ## Specs
-
+![Component Struture] (TapRoom.png)
 
 
 ## Setup/Installation Requirements
