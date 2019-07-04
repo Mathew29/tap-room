@@ -2,6 +2,9 @@ import React from 'react';
 import Keg from './Keg';
 import { Link } from 'react-router-dom';
 import coronaBeer from '../assets/images/Corona-Bottle.png'
+import bluemoon from '../assets/images/bluemoon.png';
+import budlight from '../assets/images/budlight.png';
+import coors from '../assets/images/coors.png';
 
 var masterKegList = [
   {
@@ -12,29 +15,22 @@ var masterKegList = [
     alcoholContent: '3'
   },
   {
-    name: 'MoonShine',
-    img:
-    brand: 'Basement Made',
-    price: '20',
-    alcoholContent: '25'
-  },
-  {
-    name: 'DropTop',
-    img:
+    name: 'Blue Moon',
+    img: bluemoon,
     brand: 'Beer',
     price: '10',
     alcoholContent: '7'
   },
   {
     name: 'Coors',
-    img:
+    img: coors,
     brand: 'Water',
     price: '5',
     alcoholContent: '1'
   },
   {
     name: 'Bud Light',
-    img:
+    img: budlight,
     brand: 'Water',
     price: '5',
     alcoholContent: '1'
