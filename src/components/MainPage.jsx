@@ -12,7 +12,7 @@ export default function MainPage() {
       <h4>Come And Enjoy Our Nice Beers</h4>
 
       <Link to="/keglist"><button>View Kegs List</button></Link>
-      <Link to="/login"><button>Log In</button></Link>
+      <Link to="/addkeg"><button>Add New Keg</button></Link>
     </div>
 
   );
