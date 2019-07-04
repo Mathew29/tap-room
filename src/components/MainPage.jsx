@@ -11,7 +11,7 @@ export default function MainPage() {
 
       <h4>Come And Enjoy Our Nice Beers</h4>
 
-      <Link to="/signup"><button>Sign Up</button></Link>
+      <Link to="/keglist"><button>View Kegs List</button></Link>
       <Link to="/login"><button>Log In</button></Link>
     </div>
 
