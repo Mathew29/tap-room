@@ -7,7 +7,7 @@ function Header() {
     <div>
       <style jsx>{`
       nav {
-        background-color: #CCC;
+        background-color: #87adde;
         overflow: hidden;
         padding: 1em;
         border-bottom: 1px solid #000;
