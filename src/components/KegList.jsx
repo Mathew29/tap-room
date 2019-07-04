@@ -1,26 +1,27 @@
 import React from 'react';
 import Keg from './Keg';
+import { Link } from 'react-router-dom';
 
 var masterKegList = [
-  {  
+  {
     name: 'Corona',
     brand: 'Corona',
     price: '12',
     alcoholContent: '3'
   },
-  {  
+  {
     name: 'MoonShine',
     brand: 'Basement',
     price: '20',
     alcoholContent: '25'
   },
-  {  
+  {
     name: 'DropTop',
     brand: 'Beer',
     price: '10',
     alcoholContent: '7'
   },
-  {  
+  {
     name: 'Coors',
     brand: 'Water',
     price: '5',
@@ -28,17 +29,23 @@ var masterKegList = [
   }
 ];
 
-function KegList(){
+function KegList() {
   return (
     <div>
-      <hr/>
-      {masterKegList.map((keg, index) =>
-        <Keg name={keg.name}
-          brand={keg.brand}
-          price={keg.price} 
-          alcoholContent={keg.alcoholContent}
-          key={index}/>
-      )}
+      <div>
+        <hr />
+        {masterKegList.map((keg, index) =>
+          <Keg name={keg.name}
+            brand={keg.brand}
+            price={keg.price}
+            alcoholContent={keg.alcoholContent}
+            key={index} />
+        )}
+      </div>
+      <div>
+        <Link to="/addkeg"><button>Add New Keg</button></Link>
+      </div>
+
     </div>
   );
 }
