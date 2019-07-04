@@ -16,7 +16,7 @@ var masterKegList = [
   },
   {
     name: 'Blue Moon',
-    img: bluemoon,
+    img:bluemoon,
     brand: 'Beer',
     price: '10',
     alcoholContent: '7'
