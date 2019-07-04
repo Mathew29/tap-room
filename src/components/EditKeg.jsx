@@ -12,6 +12,10 @@ export default function EditKeg() {
       form{
         display: inline-block;
       }
+
+      button {
+        box-shadow: 2px 2px 3px black;
+      }
       `}</style>
       <div className="container">
         <h1>Edit Keg</h1>
