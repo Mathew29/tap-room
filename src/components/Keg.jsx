@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export default function Keg(props) {
   return (
@@ -12,6 +13,7 @@ export default function Keg(props) {
         <h3>{props.brand}</h3>
         <h3>${props.price}</h3>
         <p><em>{props.alcoholContent}%</em></p>
+        <Link to="/addkeg"><button>Add New Keg</button></Link>
         <br/>
       </div>
       <hr/>
