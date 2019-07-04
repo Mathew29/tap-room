@@ -4,6 +4,7 @@ import MainPage from './MainPage';
 import KegList from './KegList';
 import AddKeg from './AddKeg';
 import EditKeg from './EditKeg';
+import backgroundImage from '../assets/images/backgroundImage.jpg';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -13,7 +14,9 @@ function App() {
   return (
     <div>
       <style jsx>{`
-
+      background: url(${backgroundImage});
+      background-size: 200%;
+      padding-bottom: 100%;
       `}</style>
       <NavBar/>
       <Switch>
