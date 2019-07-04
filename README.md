@@ -9,7 +9,7 @@
 
 
 ## Specs
-![ss1] (https://github.com/Mathew29/tap-room/blob/master/src/assets/images/TapRoom.png)
+![ss1](https://github.com/Mathew29/tap-room/blob/master/src/assets/images/TapRoom.png)
 
 
 ## Setup/Installation Requirements
