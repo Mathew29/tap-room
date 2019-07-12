@@ -40,7 +40,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={MainPage}/>
           <Route path='/keglist' component={KegList}/>
-          <Route path='/addkeg' component={AddKeg}/>
+          <Route path='/addkeg' render={()=> <AddKeg onNewKegCreation={this.handleAddingNewKegToList} /> } />
           <Route path='/editkeg' component={EditKeg}/>
           <Route path='/aboutus' component={AboutUs}/>>
           <Route component={Error404} />
