@@ -1,7 +1,7 @@
 import React from 'react';
 import Keg from './Keg';
 import { Link } from 'react-router-dom';
-import coronaBeer from '../assets/images/Corona-Bottle.png'
+import coronaBeer from '../assets/images/Corona-Bottle.png';
 import bluemoon from '../assets/images/bluemoon.png';
 import budlight from '../assets/images/budlight.png';
 import coors from '../assets/images/coors.png';
