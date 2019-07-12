@@ -49,7 +49,7 @@ class App extends React.Component {
           <Route path='/keglist' render={() => <KegList kegList={this.state.masterKegList} /> } />
           <Route path='/admin' render={(props) => <Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}  onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg} /> } />
           <Route path='/addkeg' render={()=> <AddKeg onNewKegCreation={this.handleAddingNewKegToList} /> } />
-          <Route path='/editkeg' component={EditKeg}/>
+          <Route path='/editkeg' render={() => <EditKeg />}/>
           <Route path='/aboutus' render={() => <AboutUs /> }/>>
           <Route component={Error404} />
         </Switch>
