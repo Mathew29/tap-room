@@ -1,9 +1,10 @@
 import React from 'react';
 import Keg from './Keg';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 
-function KegList() {
+function KegList(props) {
   return (
     <div>
       <style jsx>{`
@@ -13,14 +14,14 @@ function KegList() {
       `}</style>
       <div>
         <hr />
-        {Object.keys(props.kegId).map(function(kegId) {
+        {Object.keys(props.kegList).map(function(kegId) {
           let keg = props.kegList[kegId];
           return <Keg name={keg.name}
-          brand={keg.brand}
-          price={keg.price}
-          alcoholContent={keg.alcoholContent}
-          key={index}
-          kegId={kegId} />;
+            brand={keg.brand}
+            price={keg.price}
+            alcoholContent={keg.alcoholContent}
+            key={kegId}
+            kegId={kegId} />;
         })}
       </div>
       <div>
@@ -34,7 +35,7 @@ function KegList() {
 KegList.propTypes = {
   kegList: PropTypes.object,
   currentRouterPath: PropTypes.string,
-  onKegSelection: Proptypes
+  onKegSelection: PropTypes.func
 };
 
 
