@@ -12,8 +12,10 @@ function Keg(props) {
       <p><em>{props.alcoholContent}%</em></p>
       <hr/>
     </div>;
+
   if(props.currentRouterPath === '/admin') {
     return (
+     
       <div onClick={() => {props.onKegSelection(props.kegId);}}>
         {kegInfo}
       </div>
