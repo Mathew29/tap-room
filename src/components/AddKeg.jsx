@@ -9,8 +9,6 @@ function AddKeg(props) {
   let _alcoholContent;
 
   function handleNewKegFormSubmission(e) {
-    console.log(props);
-  
     e.preventDefault();
     props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value});
     props.history.push('/keglist');
