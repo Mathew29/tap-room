@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
 function AddKeg(props) {
@@ -9,9 +9,11 @@ function AddKeg(props) {
   let _alcoholContent;
 
   function handleNewKegFormSubmission(e) {
+    console.log(props);
+  
     e.preventDefault();
-    props.onNewKegCreation({name: _names.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value});
-    props.history.push('/');
+    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value});
+    props.history.push('/keglist');
   }
 
 
@@ -34,9 +36,9 @@ function AddKeg(props) {
         <h1>Add a New Keg</h1>
         <form onSubmit={handleNewKegFormSubmission}>
           <input type='text' id='name' placeholder='NAME' ref={(input) => {_name = input;}} required /><br />
-          <input type='text' id='brand' placeholder='BRAND' ref={(input) => {_brand = input}} required /><br />
-          <input type='number' id='price' placeholder='PRICE' ref={(input) => {_price = input}} required /><br />
-          <input type='number' id='alcoholContent' placeholder='ALCOHOL CONTENT' ref={(input) => {_alcoholContent = input}} required /><br />
+          <input type='text' id='brand' placeholder='BRAND' ref={(input) => {_brand = input;}} required /><br />
+          <input type='number' id='price' placeholder='PRICE' ref={(input) => {_price = input;}} required /><br />
+          <input type='number' id='alcoholContent' placeholder='ALCOHOL CONTENT' ref={(input) => {_alcoholContent = input;}} required /><br />
           <button type='submit'>Add New Keg</button>
         </form>
       </div>
