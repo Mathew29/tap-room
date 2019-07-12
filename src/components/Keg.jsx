@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+
 
 function Keg(props) {
-  const editButton = <button>Edit Keg</button>;
+
   const kegInfo = 
-  <div>
-    <h2>{props.name}</h2>
-    <h3>{props.brand}</h3>
-    <h3>${props.price}</h3>
-    <p><em>{props.alcoholContent}%</em></p>
-    <hr/>
-  </div>;
+    <div>
+      <h2>{props.name}</h2>
+      <h3>{props.brand}</h3>
+      <h3>${props.price}</h3>
+      <p><em>{props.alcoholContent}%</em></p>
+      <hr/>
+    </div>;
   if(props.currentRouterPath === '/admin') {
     return (
       <div onClick={() => {props.onKegSelection(props.kegId);}}>
