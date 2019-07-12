@@ -5,7 +5,7 @@ import KegDetails from './KegDetails';
 
 
 function Admin(props) {
-  let optionalSelectedKegContent = null;
+  let optionalSelectedKegContent;
   if (props.selectedKeg != null) {
     optionalSelectedKegContent = <KegDetails selectedKeg={props.kegList[props.selectedKeg]} />;
   }
