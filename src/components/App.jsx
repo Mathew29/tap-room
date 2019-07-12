@@ -43,6 +43,7 @@ class App extends React.Component {
           <Route path='/addkeg' component={AddKeg}/>
           <Route path='/editkeg' component={EditKeg}/>
           <Route path='/aboutus' component={AboutUs}/>>
+          <Route component={Error404} />
         </Switch>
       </div>
     );
