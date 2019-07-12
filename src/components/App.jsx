@@ -45,8 +45,8 @@ class App extends React.Component {
         `}</style>
         <NavBar/>
         <Switch>
-          <Route exact path='/' component={MainPage}/>
-          <Route path='/keglist' component={KegList}/>
+          <Route exact path='/' render={() => <MainPage />} />
+          <Route path='/keglist' render={() => <KegList kegList={this.state.masterKegList} /> } />
           <Route path='/admin' render={(props) => <Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}  onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg} /> } />
           <Route path='/addkeg' render={()=> <AddKeg onNewKegCreation={this.handleAddingNewKegToList} /> } />
           <Route path='/editkeg' component={EditKeg}/>
