@@ -5,8 +5,8 @@ import KegDetails from './KegDetails';
 
 
 function Admin(props) {
-  let optionalSelectedKegContent;
-  if (!props.selectedKeg) {
+  let optionalSelectedKegContent = null;
+  if (props.selectedKeg != null) {
     optionalSelectedKegContent = <KegDetails selectedKeg={props.kegList[props.selectedKeg]} />;
   }
 
@@ -23,7 +23,7 @@ function Admin(props) {
 }
 
 Admin.propTypes = {
-  kegList: PropTypes.array,
+  kegList: PropTypes.any,
   currentRouterPath: PropTypes.string.isRequired,
   onKegSelection: PropTypes.func.isRequired,
   selectedKeg: PropTypes.string
