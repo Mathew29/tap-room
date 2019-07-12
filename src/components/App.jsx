@@ -47,8 +47,8 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={MainPage}/>
           <Route path='/keglist' component={KegList}/>
-          <Route path='/admin' render={(props) => <Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname} /> } />
-          <Route path='/addkeg' render={()=> <AddKeg onNewKegCreation={this.handleAddingNewKegToList} onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg} /> } />
+          <Route path='/admin' render={(props) => <Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}  onKegSelection={this.handleChangingSelectedKeg} selectedKeg={this.state.selectedKeg} /> } />
+          <Route path='/addkeg' render={()=> <AddKeg onNewKegCreation={this.handleAddingNewKegToList} /> } />
           <Route path='/editkeg' component={EditKeg}/>
           <Route path='/aboutus' component={AboutUs}/>>
           <Route component={Error404} />
@@ -56,7 +56,7 @@ class App extends React.Component {
       </div>
     );
   }
-  }
+}
 
 
 export default App;
