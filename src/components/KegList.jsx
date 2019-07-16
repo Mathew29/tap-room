@@ -27,7 +27,7 @@ function KegList(props) {
         })}
       </div>
       <div>
-        <Link to="/admin"><button>Add New Keg</button></Link>
+        <Link to="/addkeg"><button>Add New Keg</button></Link>
       </div>
 
     </div>
